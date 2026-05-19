@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Damien Dam Wan  - Etudiant Developpeur Web</title>
+    <meta
+      name="description"
+      content="Portfolio de Damien Dam Wan: projets d'etude, progression, competences et recherche de stage."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Damien Dam Wan" />
+    <meta property="og:title" content="Portfolio | Damien Dam Wan" />
+    <meta
+      property="og:description"
+      content="Decouvre mes projets et ma progression en developpement web."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Damien Dam Wan",
+        "jobTitle": "Etudiant en developpement web",
+        "email": "damiendwn@gmail.com",
+        "url": "https://example.com",
+        "sameAs": [
+          "https://github.com/Damienn11",
+          "https://www.linkedin.com/in/alexmartin"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <header class="site-header" id="home">
+      <div class="site-header__bg-shape site-header__bg-shape--one"></div>
+      <div class="site-header__bg-shape site-header__bg-shape--two"></div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav__brand" href="#home">Damien Dam Wan</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          Menu
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#about">Profil</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#learning">Progression</a></li>
+          <li><a href="#experience">Experiences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__tape" aria-hidden="true">
+        <span>GRAND LINE PORTFOLIO</span>
+        <span>LOOKING FOR INTERNSHIP</span>
+        <span>GRAND LINE PORTFOLIO</span>
+      </div>
+
+      <section class="hero reveal">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Etudiant en developpement web</p>
+          <h1>Je suis etudiant dev web, et j'apprends en construisant des projets concrets.</h1>
+          <p class="hero__slash">En recherche de stage</p>
+          <p class="hero__lead">
+            Ici tu trouveras ce que je fais en cours et perso: mes projets, ce que j'ai appris, et ma facon de travailler.
+          </p>
+          <div class="hero__chips" aria-label="Competences clefs">
+            <span class="chip">UI Design</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Referencement naturel</span>
+            <span class="chip">Accessibilite</span>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">Voir mes projets</a>
+          </div>
+        </div>
+        <div class="hero__photo-wrap">
+          <img
+            class="hero__photo"
+            src="https://th.bing.com/th/id/OIP.xOyp4u1NuR82W24l2Is8GwHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Photo de Damien Dam Wan"
+            loading="lazy"
+          />
+          <div class="hero__sticker">Wanted for internship</div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main-content">
+      <section class="section section--about reveal" id="about" aria-labelledby="about-title">
+        <div class="section__heading">
+          <p class="section__label">A propos</p>
+          <h2 id="about-title">Mon parcours et ma facon de bosser</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Qui je suis</h3>
+            <p>
+              Je suis surtout attire par le front-end. J'aime quand une interface est claire, simple a utiliser et propre visuellement.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Mes forces</h3>
+            <p>
+              Je suis serieux dans ce que je rends, je teste beaucoup, et je prends bien les retours pour ameliorer mes projets.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Axes d'amelioration</h3>
+            <p>
+              Je veux encore progresser sur les tests front, l'accessibilite avancee et l'optimisation des performances.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects" aria-labelledby="projects-title">
+        <div class="section__heading">
+          <p class="section__label">Travaux</p>
+          <h2 id="projects-title">Projets que j'ai realises</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-card--accent">
+            <h3>Application de gestion de taches (scolaire)</h3>
+            <p>
+              Projet realise en cours pour gerer des taches avec des filtres et des priorites. Ca m'a aide a mieux structurer mon code front.
+            </p>
+            <p class="project-card__meta">Competences: HTML, CSS, JavaScript</p>
+          </article>
+          <article class="project-card">
+            <h3>Alice in Wonderland - NLP book cards (scolaire)</h3>
+            <p>
+              Prototype d'un moteur NLP en ligne de commande pour generer des fiches de livres. J'ai traite les textes Project Gutenberg pour extraire la diversite lexicale, les themes, les entites et produire un resume court.
+            </p>
+            <p class="project-card__meta">Competences: Python, NLP, ligne de commande, lexdiv, entities</p>
+          </article>
+          <article class="project-card project-card--tilt">
+            <h3>Hack & Juice - OWASP Juice Shop (scolaire)</h3>
+            <p>
+              Entrainement au pentest sur Juice Shop avec des challenges varies. J'ai documente les methodos, les failles OWASP Top 10, les risques et les pistes de remediation.
+            </p>
+            <p class="project-card__meta">Competences: pentest, OWASP Top 10, Burp Suite, OSINT, reporting</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--timeline reveal" id="learning" aria-labelledby="learning-title">
+        <div class="section__heading">
+          <p class="section__label">Progression</p>
+          <h2 id="learning-title">Ce que j'ai appris cette annee</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <h3>Debut d'annee: structurer proprement</h3>
+            <p>
+              Je suis passe d'un code un peu brouillon a une base plus propre, avec des noms clairs et des sections bien structurees.
+            </p>
+          </li>
+          <li class="timeline__item">
+            <h3>Milieu d'annee: penser utilisateur</h3>
+            <p>
+              J'ai commence a penser plus utilisateur: meilleurs contrastes, formulaires plus simples et navigation plus claire.
+            </p>
+          </li>
+          <li class="timeline__item">
+            <h3>Aujourd'hui: viser un niveau pro</h3>
+            <p>
+              Aujourd'hui je me concentre sur la perf, le referencement naturel et l'accessibilite pour me rapprocher d'un niveau pro.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section reveal" id="experience" aria-labelledby="experience-title">
+        <div class="section__heading">
+          <p class="section__label">Hors projets scolaires</p>
+          <h2 id="experience-title">Ce que je fais en plus des cours</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Projets personnels</h3>
+            <p>
+              Je fais aussi des petits projets perso et des prototypes rapides pour tester des idees et progresser.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--manifesto reveal" aria-labelledby="manifesto-title">
+        <div class="manifesto">
+          <p class="section__label">Philosophie</p>
+          <h2 id="manifesto-title">Mon objectif: faire des interfaces utiles, claires et agreables.</h2>
+          <p>
+            J'essaie de construire des interfaces qui servent vraiment l'utilisateur, sans en faire trop, avec une base propre et maintenable.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--contact reveal" id="contact" aria-labelledby="contact-title">
+        <div class="section__heading">
+          <p class="section__label">Contact</p>
+          <h2 id="contact-title">Discutons de votre besoin</h2>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-details card">
+            <h3>Coordonnees</h3>
+            <ul>
+              <li>Email: <a href="mailto:damiendwn@gmail.com">damiendwn@gmail.com</a></li>
+              <li>Telephone: <a href="tel:+33744012930">+33 7 44 01 29 30</a></li>
+              <li>Ville: Paris, France</li>
+              <li>GitHub: <a href="https://github.com/Damienn11" target="_blank" rel="noreferrer">github.com/Damienn11</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/damien-dam-wan" target="_blank" rel="noreferrer">linkedin.com/in/damien-dam-wan</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Portfolio de Damien Dam Wan - Mis a jour au fil des projets</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
