@@ -468,8 +468,8 @@ main {
 }
 
 .contact-layout {
-  grid-template-columns: 1fr;
-  justify-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
 }
 
 #experience .about-grid {
@@ -479,7 +479,10 @@ main {
 
 .contact-details {
   width: 100%;
-  max-width: 520px;
+}
+
+.contact-form h3 {
+  margin-top: 0;
 }
 
 .contact-details ul {

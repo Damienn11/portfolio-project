@@ -37,6 +37,7 @@ if (form && feedback) {
     const data = new FormData(form);
     const name = String(data.get('name') || '').trim();
     const email = String(data.get('email') || '').trim();
+    const subject = String(data.get('subject') || '').trim();
     const message = String(data.get('message') || '').trim();
 
     if (!name || !email || !message) {
@@ -44,7 +45,8 @@ if (form && feedback) {
       return;
     }
 
-    const mailto = `mailto:damiendwn@gmail.com?subject=Contact portfolio de ${encodeURIComponent(name)}&body=${encodeURIComponent(`${message}\n\nEmail: ${email}`)}`;
+    const subjectLine = subject ? `Contact portfolio: ${subject}` : `Contact portfolio de ${name}`;
+    const mailto = `mailto:damiendwn@gmail.com?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(`${message}\n\nNom: ${name}\nEmail: ${email}`)}`;
 
     feedback.textContent = 'Parfait, ton appli mail va s\'ouvrir.';
     window.location.href = mailto;
